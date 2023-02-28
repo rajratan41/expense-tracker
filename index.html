@@ -9,7 +9,88 @@
   </head>
   <body>
     <div class="container">
-      <div class="box"></div>
+      <!-- Box -->
+      <div class="box">
+        <!-- Upper box -->
+        <div class="upper-box">
+          <h1>Expense Tracker</h1>
+          <div class="balance">
+            <h2>₹ 0</h2>
+            <h3>Your Balance</h3>
+          </div>
+        </div>
+        <!-- Transaction container -->
+        <div class="transaction-container">
+          <h3>Transactions</h3>
+          <hr />
+
+          <!-- Transactions -->
+          <div class="transactions">
+            <!-- Transaction Credit -->
+            <div class="transaction">
+              <div class="left">
+                <p>Text 1</p>
+                <p>+ $ 200</p>
+              </div>
+              <div class="status credit">C</div>
+            </div>
+            <!-- Transaction Credit -->
+            <!-- Transaction Debit -->
+            <div class="transaction">
+              <div class="left">
+                <p>Text 1</p>
+                <p>+ $ 200</p>
+              </div>
+              <div class="status debit">D</div>
+            </div>
+            <!-- Transaction Debit -->
+          </div>
+          <!-- Transactions -->
+        </div>
+        <!-- Transaction container -->
+
+        <!-- Upper box -->
+
+        <!-- Transaction Form -->
+        <div class="transaction-from">
+          <h3>Add Transactions</h3>
+          <form>
+            <div class="inputs">
+              <div class="form-control">
+                <label for="text">Text</label>
+                <input
+                  placeholder="Enter Description"
+                  type="text"
+                  name="text"
+                  id="text"
+                />
+              </div>
+              <div class="form-control">
+                <label for="text">Amount</label>
+                <input
+                  placeholder="Enter Amount"
+                  type="number"
+                  name="number"
+                  id="number"
+                />
+              </div>
+            </div>
+
+            <div class="button-container">
+              <button id="earnBtn">
+                <p>₹ 0</p>
+                <p>Earnings</p>
+              </button>
+              <button id="expenseBtn">
+                <p>₹ 0</p>
+                <p>Expenses</p>
+              </button>
+            </div>
+          </form>
+        </div>
+        <!-- Transaction Form -->
+      </div>
+      <!-- Box -->
     </div>
     <script src="./script.js"></script>
   </body>
